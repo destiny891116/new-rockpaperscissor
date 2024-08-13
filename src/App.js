@@ -12,15 +12,15 @@ import Box from "./component/Box"
 const choice = {
   rock:{
     name:"Rock",
-    img:"https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day-1200x834.jpg",
+    img:"/img/you_rock.png",
   },
   scissors:{
     name:"Scissors",
-    img:"https://e7.pngegg.com/pngimages/1018/824/png-clipart-scissors-scissors-technic-illustrator.png",
+    img:"/img/you_scissor.png",
   },
   paper:{
     name:"Paper",
-    img:"https://www.collinsdictionary.com/images/full/paper_111691001.jpg",
+    img:"/img/you_paper.png",
   }
 }
 function App() {
