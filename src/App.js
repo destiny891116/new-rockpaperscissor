@@ -80,8 +80,8 @@ function App() {
       </div>
       <div className='main'>
         <img className='btn' src={'/img/scissors_btn.png'} alt='scissors_btn' onClick={() => play("scissors")} />
-        <img className='btn'src={'/img/rock_btn.png'} alt='scissors_btn' onClick={() => play("rock")} />
-        <img className='btn'src={'/img/paper_btn.png'} alt='scissors_btn' onClick={() => play("paper")} />
+        <img className='btn'src={'/img/rock_btn.png'} alt='rock_btn' onClick={() => play("rock")} />
+        <img className='btn'src={'/img/paper_btn.png'} alt='paper_btn' onClick={() => play("paper")} />
       </div>
       <div className='main'>
         <p>2024 © Created by yongsei</p>

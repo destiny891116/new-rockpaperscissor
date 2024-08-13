@@ -6,9 +6,9 @@ function Box(props) {
   let imgChg = "";
   let diffResult = "";
   
-  if( props.item != null) {
+  if( props.item !== null) {
     //컴퓨터 이미지 변경
-    if(props.title != 'Computer') {
+    if(props.title !== 'Computer') {
       imgChg = props.item.img;
     } else {
       if( props.item.name === 'Scissors') imgChg = '/img/computer_scissors.png';
