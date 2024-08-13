@@ -34,7 +34,7 @@ function Box(props) {
   return (
     <div className={`box ${diffResult}`}  >
       <h1>{props.title}</h1>
-        <img className='item-img' src={props.item && imgChg} alt='hand image'></img>
+        <img className='item-img' src={props.item && imgChg} alt=''></img>
       <h2>{diffResult}</h2>
     </div>
   )
