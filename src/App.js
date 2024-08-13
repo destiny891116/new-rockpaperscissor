@@ -54,10 +54,10 @@ function App() {
     // user == paper, computer == scissors =>  user Lose!
 
     if(user.name === computer.name) {
-      return "tie";
-    } else if(user.name === "Rock") return computer.name === "Scissors" ? "Win!" : "Lose!";
-    else if(user.name === "Scissors") return computer.name === "Paper" ? "Win!" : "Lose!";
-    else if(user.name === "Paper") return computer.name === "Rock" ? "Win!" : "Lose!";
+      return "TIE";
+    } else if(user.name === "Rock") return computer.name === "Scissors" ? "WINNER" : "LOSER";
+    else if(user.name === "Scissors") return computer.name === "Paper" ? "WINNER" : "LOSER";
+    else if(user.name === "Paper") return computer.name === "Rock" ? "WINNER" : "LOSER";
     
   };
 
@@ -71,14 +71,20 @@ function App() {
 
   return (
     <div>
+      <div class="main">
+        <h1>Scissors! Rock! Paper!</h1>
+      </div>
       <div className='main'>
         <Box title="You" item={userSelect} result={result}/>
         <Box title="Computer" item={computerSelect} result={result}/>
       </div>
       <div className='main'>
-        <button onClick={() => play("scissors")}>가위</button>
-        <button onClick={() => play("rock")}>바위</button>
-        <button onClick={() => play("paper")}>보</button>
+        <img className='btn' src={'/img/scissors_btn.png'} alt='scissors_btn' onClick={() => play("scissors")} />
+        <img className='btn'src={'/img/rock_btn.png'} alt='scissors_btn' onClick={() => play("rock")} />
+        <img className='btn'src={'/img/paper_btn.png'} alt='scissors_btn' onClick={() => play("paper")} />
+      </div>
+      <div className='main'>
+        <p>2024 © Created by yongsei</p>
       </div>
     </div>
   );
