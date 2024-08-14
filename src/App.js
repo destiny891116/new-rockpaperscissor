@@ -34,7 +34,7 @@ function App() {
     //내가 선택한 값
     setUserSelect(choice[userChoice]);
   
-    let computerChoice = randomChoice();
+    const computerChoice = randomChoice();
     //컴퓨터 랜덤 값
     setComputerSelect(computerChoice);
 
@@ -62,10 +62,10 @@ function App() {
   };
 
   const randomChoice=()=>{
-    let itemAtrray = Object.keys(choice); // 객체에 키값만 뽑아서 어레이로 만들어주는 함수
+    const itemAtrray = Object.keys(choice); // 객체에 키값만 뽑아서 어레이로 만들어주는 함수
     //0~3 랜덤 값 가져오기
-    let randomItem = Math.floor(Math.random() * itemAtrray.length);
-    let final = itemAtrray[randomItem];
+    const randomItem = Math.floor(Math.random() * itemAtrray.length);
+    const final = itemAtrray[randomItem];
     return choice[final];
   };
 

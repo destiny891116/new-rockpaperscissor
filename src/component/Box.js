@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Box(props) {
-  console.log(props);
 
   let imgChg = "";
   let diffResult = "";
