@@ -27,9 +27,24 @@ export default class BoxClass extends Component {
         }
     };
 
+    getResult = () => {
+        if( this.props.title === 'Computer') {
+            if( this.props.result === 'TIE') {
+              this.diffResult = 'TIE';
+            } else if(this.props.result === 'WINNER') {
+                this.diffResult = 'LOSER';
+            } else if(this.props.result === 'LOSER') {
+                this.diffResult = 'WINNER';
+            } 
+          } else {
+            this.diffResult = this.props.result;
+          }
+    }
+
    
   render() {
     this.getImg();
+    this.getResult();
     return (
         <div className={`box ${this.diffResult}`}  >
             <h1>{this.props.title}</h1>
