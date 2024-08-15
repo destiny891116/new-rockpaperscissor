@@ -35,7 +35,9 @@ export default class BoxClass extends Component {
                 this.diffResult = 'LOSER';
             } else if(this.props.result === 'LOSER') {
                 this.diffResult = 'WINNER';
-            } 
+            } else {
+                this.diffResult = '';
+            }
           } else {
             this.diffResult = this.props.result;
           }
