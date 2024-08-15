@@ -56,8 +56,8 @@ function App() {
     if(user.name === computer.name) {
       return "TIE";
     } else if(user.name === "Rock") return computer.name === "Scissors" ? "WINNER" : "LOSER";
-    else if(user.name === "Scissors") return computer.name === "Paper" ? "WINNER" : "LOSER";
-    else if(user.name === "Paper") return computer.name === "Rock" ? "WINNER" : "LOSER";
+      else if(user.name === "Scissors") return computer.name === "Paper" ? "WINNER" : "LOSER";
+      else if(user.name === "Paper") return computer.name === "Rock" ? "WINNER" : "LOSER";
     
   };
 
